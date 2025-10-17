@@ -114,7 +114,9 @@ Imagine you're done going through all the cards and recall the first location se
 ## More Information
 
 To get more in-depth understanding of how this memory technique works, check this
-out: [Introduction to the PAO Matrix technique](https://learningisliving.dk/2018/03/25/remember-carddeck/).
+out:
+
+[Introduction to the PAO Matrix technique](https://learningisliving.dk/2018/03/25/remember-carddeck/).
 
 ## Technologies
 
