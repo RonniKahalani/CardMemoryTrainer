@@ -120,8 +120,7 @@ out: [Introduction to the PAO Matrix technique](https://learningisliving.dk/2018
 
 This web app is build with
 
-- Backend: Spring Boot, Java, serving JSON data...
-- Frontend: JavaScript, HTML, CSS, Bootstrap, JSON...
+- JavaScript, HTML, CSS, Bootstrap, JSON...
 
 ## License
 
