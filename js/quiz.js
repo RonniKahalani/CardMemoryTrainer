@@ -112,6 +112,7 @@ export class Quiz {
         this.currentLociIndex = 1;
 
         this.timer = new Timer();
+        this.load();
     }
 
     /**
@@ -128,7 +129,6 @@ export class Quiz {
 
     /**
      * Loads and initializes the quiz.
-     * @returns {Promise<void>}
      */
     load() {
         const ref = this;

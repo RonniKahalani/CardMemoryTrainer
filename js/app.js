@@ -28,9 +28,9 @@ SOFTWARE.
 /**
  * Main app script used to initialize the app.
  */
-import {Matrix} from "./matrix.js";
-import {Quiz} from "./quiz.js";
-import {TabHandler} from "./tab.js";
+import { Matrix } from "./matrix.js";
+import { Quiz } from "./quiz.js";
+import { TabHandler } from "./tab.js";
 
 const tabHandler = new TabHandler();
 window.addEventListener('DOMContentLoaded', start);
@@ -43,19 +43,18 @@ btnFullscreen.onclick = () => toggleFullscreenMode();
   */
 function start() {
 
-    $.getJSON("../data/matrix/default.json", function (json) {
+    try {
 
-        const matrix = new Matrix();
-        try {
-            matrix.load(json);
+        $.getJSON("../data/matrix/default.json", function (json) {
+
+            const matrix = new Matrix(json);
             const quiz = new Quiz(matrix);
-            quiz.load();
             setupEvents();
-
-        } catch (e) {
-            showError("An error occurred.", e);
-        }
-    });
+        });
+        
+    } catch (e) {
+        showError("An error occurred.", e);
+    }
 }
 
 /**

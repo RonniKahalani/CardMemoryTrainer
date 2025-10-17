@@ -38,12 +38,12 @@ export class Matrix {
     /**
      * Constructor.
      */
-    constructor() {
-        this.BASE_ENDPOINT = "http://localhost:8080/api/v1/";
+    constructor(json) {
         this.SUITS = ["hearts", "spades", "diamonds", "clubs"];
 
-        this.currentMatrix = null;
         this.cardUtil = new CardUtil();
+        this.currentMatrix = json;
+        this.renderMatrix();
     }
 
     /**
@@ -106,23 +106,6 @@ export class Matrix {
                 image.onmouseout = () => image.src = card.image;
                 image.onclick = () => this.openCardInfo(card);
             }
-        }
-    }
-
-    /**
-     * Loads the matrix from its REST endpoint.
-     * @param id
-     * @returns {Promise<any>}
-     */
-    async loadMatrix(id) {
-        const endpoint = `${this.BASE_ENDPOINT}pao/${id}`;
-        try {
-            const response = await fetch(endpoint);
-            if (response.ok) {
-                return await response.json();
-            }
-        } catch (e) {
-            throw new Error("Failed to fetch matrix data");
         }
     }
 }
