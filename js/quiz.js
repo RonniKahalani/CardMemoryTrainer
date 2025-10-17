@@ -147,15 +147,11 @@ export class Quiz {
      */
     loadQuiz() {
         this.quizCards = [];
-        let index = 0;
-        ["hearts", "spades", "diamonds", "clubs"].forEach(suit => {
-            const cards = this.matrix[suit].forEach(card => {
-                console.log(suit);
-                this.quizCards[index++] = {suit: suit, name: card.name, value: card.value};
-            })
+        this.matrix.SUITS.forEach(suit => {
+            const cards = this.matrix.currentMatrix[suit].forEach(card => {
+                this.quizCards[this.quizCards.length] = {suit: suit, name: card.name, value: card.value};
+            });
         });
-
-        return this.quizCards;
     }
 
     /**
@@ -166,7 +162,7 @@ export class Quiz {
         for (let i = 0; i < this.quizCards.length; i++) {
             let card = this.quizCards[i];
             let paoIndex = card.suit.toLowerCase();
-            let paoItem = this.matrix[paoIndex];
+            let paoItem = this.matrix.currentMatrix[paoIndex];
             card.pao = paoItem[card.value - 1];
         }
 

@@ -48,7 +48,7 @@ function start() {
         const matrix = new Matrix();
         try {
             matrix.load(json);
-            const quiz = new Quiz(matrix.currentMatrix);
+            const quiz = new Quiz(matrix);
             quiz.load();
             setupEvents();
 
