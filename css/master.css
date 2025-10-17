@@ -1,0 +1,706 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 12pt;
+    color: white;
+    background-color: black;
+}
+
+select,
+input {
+    cursor: pointer;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#bg-video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    mask-image: linear-gradient(to top, transparent 0%, black 50%, transparent 100%);
+    user-select: none;
+    pointer-events: none;
+    filter: grayscale(0.8);
+    aspect-ratio: 16/9;
+}
+
+.matrix-header-color1 {
+    background-color: darkorchid;
+}
+
+.matrix-header-color2 {
+    background-color: darkgreen;
+}
+
+.matrix-header-color3 {
+    background-color: darkred;
+}
+
+.matrix-header-color4 {
+    background-color: gray;
+}
+
+.matrix-header-color5 {
+    background-color: orangered;
+}
+
+.matrix-header-color6 {
+    background-color: black;
+}
+
+.matrix-header-color7 {
+    background-color: darkblue;
+}
+
+#pao-palace {
+    display: none;
+}
+
+.palace-loci {
+    display: none;
+}
+
+#palace {
+    display: none;
+}
+
+.palace-image {
+    width: 600px;
+    height: 400px;
+    margin:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#palace-entries {
+    text-align: center;
+}
+
+.palace-label {
+    font-size: 15pt;
+    color: #0d6efd;
+    margin-top: 0;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.palace-phrase {
+    font-size: 20pt;
+}
+
+.palace-items {
+    display: none;
+    width: 600px;
+    text-align: center;
+    position: absolute;
+    z-index: 300;
+    padding-top: 130px;
+}
+
+.palace-item > img {
+    box-shadow: #2b2b2b 2px 2px 5px;
+}
+
+.quiz-button-group {
+    padding-top:5px;
+}
+
+#tipModal {
+    color: black;
+}
+
+#panel {
+    width: 100%;
+    height:70px;
+    margin: 0;
+    background-color: black;
+    border-bottom: #2f363c;
+}
+
+#panel-title {
+    font-size: 20pt;
+    color: #0d6efd;
+}
+
+#panel-left {
+
+}
+
+#panel-center {
+    text-align: center;
+}
+
+#panel-right {
+    vertical-align: middle;
+}
+
+#content {
+}
+
+#card-counter-content {
+    font-size: 15pt;
+    color: #0d6efd;
+}
+
+#card-counter {
+}
+
+#pao-matrix {
+    display: none;
+}
+
+#pao-quiz {
+    display: none;
+}
+
+#quiz-feature {
+    display: none;
+    margin: auto auto;
+}
+
+#quiz-front {
+    text-align: center;
+    margin-top: 200px;
+}
+
+#quiz-image {
+    width: 300px;
+    height: 360px;
+}
+
+.quiz-select-div {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    margin:auto;
+}
+
+.quiz-label {
+    width: 100px;
+}
+
+.quiz-select {
+    width:250px;
+    height: 40px;
+    border: 3px solid black;
+    margin:0
+}
+
+.quiz-check {
+    margin: 5px;
+    width: 30px;
+    height: auto;
+}
+
+.form-check-input:checked {
+    background-color: green;
+    border: 3px solid black;
+}
+
+.form-check-input {
+    background-color: white;
+    border: 3px solid black;
+}
+
+.form-check-select-neutral {
+    background-color: white;
+    border: 3px solid black;
+}
+
+#quiz-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#quiz-left {
+    width: 33%;
+}
+
+#quiz-center {
+    text-align: center;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+#quiz-right {
+    width: 33%;
+}
+
+#quiz-select-person {
+    margin: 5px;
+}
+
+#quiz-select-action {
+    margin: 5px;
+}
+
+#quiz-select-object {
+    margin: 5px;
+}
+
+#quiz-select-card {
+    margin: 5px;
+}
+
+.quiz-select-neutral {
+    background-color: white;
+    color: black;
+}
+
+.quiz-select-wrong {
+    background-color: #DF0000;
+    color: white;
+}
+
+.quiz-select-correct {
+    background-color: #198754;
+    color: white;
+}
+
+#pao-instructions {
+    display: none;
+    margin: 10px;
+}
+
+.card {
+    width: 80px;
+    display: inline;
+    margin: 5px;
+}
+
+.card-red {
+    background-color: #DF0000;
+}
+
+.card-black {
+    background-color: #000000;
+}
+
+.info-column {
+    text-align: center;
+    display: block;
+    margin: auto auto;
+}
+
+.toast-header {
+    background-color: #1f262c;
+    color: white;
+    border-bottom: 1px solid #2f363c;
+}
+
+.toast-body {
+    color: black;
+}
+
+#pao-types {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    font-size: 9pt;
+}
+
+.pao-type-column {
+    width: 224px;
+    text-align: center;
+    border: 1px solid #2f363c;
+    text-transform: uppercase;
+}
+
+.pao-type-column-half {
+    width: 112px;
+    text-align: center;
+    border: 1px solid #2f363c;
+    text-transform: uppercase;
+}
+
+#pao-header {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    font-size: 9pt;
+}
+
+.pao-header-column {
+    width: 112px;
+    text-align: center;
+    border: 1px solid #2f363c;
+    text-transform: uppercase;
+}
+
+#pao-rows {
+
+}
+
+.pao-row {
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#pao-rows > div:nth-child(even) {
+    background: black
+}
+
+#pao-rows > div:nth-child(odd) {
+    background: #DF0000
+}
+
+.pao-column {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 9pt;
+    text-align: center;
+    width: 112px;
+    white-space: nowrap;
+}
+
+.pao-column span {
+
+}
+
+.pao-person {
+
+}
+
+.pao-image {
+    width: 112px;
+    height: 142px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.pao-action {
+
+}
+
+.pao-object {
+
+}
+
+
+#error-msg {
+    display: none;
+}
+
+#quiz-input {
+}
+
+#quiz-question {
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+#label-quiz-reveal-all {
+    cursor: pointer;
+}
+
+
+.matrix-deck {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.matrix-column {
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    flex-wrap: nowrap;
+    gap: 2px;
+}
+
+.matrix-column-single {
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    flex-wrap: nowrap;
+}
+
+.matrix-card {
+    width: 120px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9pt;
+}
+
+.matrix-header-name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+    text-transform: uppercase;
+    background-color: #1f262c;
+}
+
+.matrix-header-category {
+    width: 100%;
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    font-size: 10pt;
+    text-transform: uppercase;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#card-info {
+    display: none;
+    position: absolute;
+    margin: auto auto;
+    width: 550px;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1f262c;
+    padding: 20px;
+    border: #2b2b2b 2px solid;
+    border-radius: 5%;
+}
+
+.pao-info-image {
+    width: 224px;
+    height: 284px;
+    text-align: center;
+}
+
+.pao-info-card {
+    height: 284px;
+    text-align: center;
+}
+
+.pao-info-description {
+    height: 100px;
+    overflow: auto;
+}
+
+.matrix-header-male {
+    width: 224px;
+    font-size: 8pt;
+    text-transform: uppercase;
+}
+
+.matrix-header-female {
+    width: 224px;
+    font-size: 8pt;
+    text-transform: uppercase;
+}
+
+.palace-info {
+    width: 600px;
+    font-size: 15pt;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.suit-heart {
+    font-size: 15pt;
+    color: #DF0000;
+    background-color: white;
+}
+
+.suit-spade {
+    font-size: 15pt;
+    color: black;
+    background-color: white;
+}
+
+.suit-diamond {
+    font-size: 15pt;
+    color: #DF0000;
+    background-color: white;
+}
+
+.suit-club {
+    font-size: 15pt;
+    color: black;
+    background-color: white;
+}
+
+.markup-blue {
+    color: dodgerblue;
+}
+
+#btn-fullscreen {
+    cursor: pointer;
+}
+
+.phrase-color1 {
+    color: #4A4A4A;
+}
+
+.phrase-color2 {
+    color: #FFC107;
+}
+
+.phrase-color3 {
+    color: #0052CC;
+}
+
+.home-message-x {
+    background-color: #0d6efd;
+}
+
+.home-message-y {
+    background-color: #198754;
+}
+
+.home-message-x,
+.home-message-y {
+    font-size: 14pt;
+    margin: 10px;
+    max-width: 600px;
+    display: inline-block;
+    padding: 20px;
+    box-shadow: #2f363c 5px 5px 5px;
+}
+
+.section-row,
+.pao-info-image,
+.pao-info-card,
+.pao-image,
+.palace-image,
+#quiz-image,
+#home-message-x,
+#home-message-y,
+.border-default {
+    border-top: 1px solid #2f363c;
+    border-left: 1px solid #2f363c;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 10px;
+}
+
+.chat-messages {
+    height: 100vh;
+    margin: 20px;
+    padding-top: 135px;
+}
+
+.palace-navigation {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section {
+    background-color: black;
+}
+
+.section hr {
+    color: #0d6efd;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.section-markup-blue {
+    color: #0d6efd;
+}
+
+.section-title {
+    font-size: 50pt;
+    color: #0d6efd;
+}
+
+.section-message {
+    color: white;
+    font-size: 20pt;
+}
+
+.section-info {
+    margin: auto auto;
+    width: 80%;
+    padding: 50px;
+}
+
+#section-matrix {
+}
+
+
+#section-do-it {
+
+}
+#section-quiz {
+
+}
+#section-memory-palace {
+
+}
+
+
+.section-subtitle {
+    font-size: 30pt;
+    color: #0d6efd;
+}
+
+.section-row {
+    margin-bottom: 20px;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    opacity: 95%;
+    border-radius: 5%;
+    box-shadow: #2b2b2b 2px 2px 5px;
+}
+
+.instruction-title {
+    font-size: 20pt;
+    color: #0d6efd;
+}
+
+.suit-column {
+    width:50px;
+}
+
+.suit-heart-big {
+    color: #DF0000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.suit-spade-big {
+    color: black;
+}
+.suit-diamond-big {
+    color: #DF0000;
+}
+.suit-club-big {
+    color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.suit-club-big,
+.suit-diamond-big,
+.suit-spade-big,
+.suit-heart-big {
+    font-size: 25pt;
+    padding-top: 80px;
+    text-align: center;
+    background-color: white;
+    border-bottom: black 1px solid;
+}
+
+.form-check-input:checked {
+    background-color: #198754;
+    border: 1px solid white;
+}

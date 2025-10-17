@@ -1,0 +1,92 @@
+[
+  {
+    "label": "Parking Lot",
+    "image": "/img/classic/loci1.jpg",
+    "info": "On the parking lot at your house you notice"
+  },
+  {
+    "label": "Front Door",
+    "image": "/img/classic/loci2.jpg",
+    "info": "At the front door on the doormat you notice"
+  },
+  {
+    "label": "Hall",
+    "image": "/img/classic/loci3.jpg",
+    "info": "Opening the door and entering the hall you notice"
+  },
+  {
+    "label": "Kitchen",
+    "image": "/img/classic/loci4.jpg",
+    "info": "Making a snack on the kitchen table you see"
+  },
+  {
+    "label": "Living Room",
+    "image": "/img/classic/loci5.jpg",
+    "info": "You head for the living room sofa and see"
+  },
+  {
+    "label": "Patio",
+    "image": "/img/classic/loci6.jpg",
+    "info": "Going for fresh air on the patio you see"
+  },
+  {
+    "label": "Garden",
+    "image": "/img/classic/loci7.jpg",
+    "info": "Among the garden flowers you see"
+  },
+  {
+    "label": "Stairway",
+    "image": "/img/classic/loci8.jpg",
+    "info": "Coming back inside and upstairs you see"
+  },
+  {
+    "label": "Master Bedroom",
+    "image": "/img/classic/loci9.jpg",
+    "info": "In the master bedroom you see"
+  },
+  {
+    "label": "Nursery",
+    "image": "/img/classic/loci10.jpg",
+    "info": "While checking the baby in the nursery you see"
+  },
+  {
+    "label": "Kids Bedroom",
+    "image": "/img/classic/loci11.jpg",
+    "info": "After greeting the teens in kids bedroom you see"
+  },
+  {
+    "label": "Bathroom",
+    "image": "/img/classic/loci12.jpg",
+    "info": "You head for the bathroom for a shower and see"
+  },
+  {
+    "label": "Attic",
+    "image": "/img/classic/loci13.jpg",
+    "info": "On your way to the attic you see"
+  },
+  {
+    "label": "Roof",
+    "image": "/img/classic/loci14.jpg",
+    "info": "While fixing the roof you hear a noise and see"
+  },
+  {
+    "label": "Chimney",
+    "image": "/img/classic/loci15.jpg",
+    "info": "Climbing up the chimney you see"
+  },
+  {
+    "label": "Sky",
+    "image": "/img/classic/loci16.jpg",
+    "info": "You look up into the sky and see"
+  },
+  {
+    "label": "Moon",
+    "image": "/img/classic/loci17.jpg",
+    "info": "Turning to the moon you see"
+  },
+  {
+    "label": "Last card",
+    "image": "/img/classic/last.jpg",
+    "info": "Tada!..This is the last card. I left you a clue below, can you guess what card it is?"
+  }
+]

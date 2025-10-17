@@ -1,0 +1,530 @@
+{
+    "hearts": [
+        {
+            "id": "hearts-1",
+            "person": "A. Schwarzenegger",
+            "description": "Know as the bodybuilder from Austria.",
+            "action": "Bench presses",
+            "object": "barbell",
+            "image": "/img/classic/h1.jpg",
+            "name": "Ace",
+            "value": 1
+        },
+        {
+            "id": "hearts-2",
+            "person": "Flojo",
+            "description": "Florence Griffith Joyner (Flojo) is a female olympic athlete runner with long colorful nails.",
+            "action": "Breaks nail on",
+            "object": "gold medal",
+            "image": "/img/classic/h2.jpg",
+            "name": "Two",
+            "value": 2
+        },
+        {
+            "id": "hearts-3",
+            "person": "Tom Hanks",
+            "description": "Played Forrest Gump in the movie with the same name, who ran for several years.",
+            "action": "Runs through",
+            "object": "forest",
+            "image": "/img/classic/h3.jpg",
+            "name": "Three",
+            "value":3
+        },
+        {
+            "id": "hearts-4",
+            "person": "Scarlett Johansson",
+            "description": "From the movie Lost in Translation, with Bill Murray in Tokyo, where they drink whisky together.",
+            "action": "Drinks with",
+            "object": "Bill Murray",
+            "image": "/img/classic/h4.jpg",
+            "name": "Four",
+            "value":4
+        },
+        {
+            "id": "hearts-5",
+            "person": "Julian Assange",
+            "description": "Founder of WikiLeaks, who published classified information from anonymous sources and disappeared in hiding.",
+            "action": "Vanishes into",
+            "object": "puff of smoke",
+            "image": "/img/classic/h5.jpg",
+            "name": "Five",
+            "value":5
+        },
+        {
+            "id": "hearts-6",
+            "person": "Taylor Swift",
+            "description": "Famous pop singer who had a public feud with Kanye West.",
+            "action": "Offended by",
+            "object": "Kanye West",
+            "image": "/img/classic/h6.jpg",
+            "name": "Six",
+            "value":6
+        },
+        {
+            "id": "hearts-7",
+            "person": "Albert Einstein",
+            "description": "Famous physicist who developed the theory of relativity and light speed.",
+            "action": "Fly light speed to",
+            "object": "shiny star",
+            "image": "/img/classic/h7.jpg",
+            "name": "Seven",
+            "value":7
+        },
+        {
+            "id": "hearts-8",
+            "person": "Pamela Anderson",
+            "description": "Famous for her role in Baywatch, where she saved drowning people.",
+            "action": "Saves drowning",
+            "object": "child",
+            "image": "/img/classic/h8.jpg",
+            "name": "Eight",
+            "value":8
+        },
+        {
+            "id": "hearts-9",
+            "person": "Steve Jobs",
+            "description": "Co-founder of Apple and pioneer of the personal computer revolution, experimented with drugs (LSD) and creativity.",
+            "action": "Used LSD to invent",
+            "object": "iPad",
+            "image": "/img/classic/h9.jpg",
+            "name": "Nine",
+            "value":9
+        },
+        {
+            "id": "hearts-10",
+            "person": "JK Rowling",
+            "description": "Author of the Harry Potter series, who wrote the books in cafes while being a single mother.",
+            "action": "Writes story about",
+            "object": "Harry Potter",
+            "image": "/img/classic/h10.jpg",
+            "name": "Ten",
+            "value":10
+        },
+        {
+            "id": "hearts-11",
+            "person": "Jesus Christ",
+            "description": "Was known for performing miracles, including walking on water.",
+            "action": "Walks on",
+            "object": "puddle",
+            "image": "/img/classic/h11.jpg",
+            "name": "Jack",
+            "value":11
+        },
+        {
+            "id": "hearts-12",
+            "person": "Michelle Obama",
+            "description": "Former First Lady star-jumps on the White House lawn.",
+            "action": "Star-jumps on",
+            "object": "White House lawn",
+            "image": "/img/classic/h12.jpg",
+            "name": "Queen",
+            "value":12
+        },
+        {
+            "id": "hearts-13",
+            "person": "Barack Obama",
+            "description": "44th President fly-swatting a fly during a press conference.",
+            "action": "Fly-swatting",
+            "object": "buzzing fly",
+            "image": "/img/classic/h13.jpg",
+            "name": "King",
+            "value":13
+        }
+    ],
+    "clubs": [
+        {
+            "id": "clubs-1",
+            "person": "Usain Bolt",
+            "description": "Is a Jamaican sprinter, widely considered to be the greatest sprinter of all time.",
+            "action": "Chases",
+            "object": "cheetah",
+            "image": "/img/classic/s1.jpg",
+            "name": "Ace",
+            "value":1
+        },
+        {
+            "id": "clubs-2",
+            "person": "Annika Sorenstam",
+            "description": "Is a Swedish professional golfer who won 10 major championships on the LPGA Tour.",
+            "action": "Puts",
+            "object": "golf ball",
+            "image": "/img/classic/s2.jpg",
+            "name": "Two",
+            "value":2
+        },
+        {
+            "id": "clubs-3",
+            "person": "Ben Stiller",
+            "description": "Was in the movie Meet the Parents, where he was polygraphed by Robert De Niro.",
+            "action": "Polygraphed by",
+            "object": "Robert De Niro",
+            "image": "/img/classic/s3.jpg",
+            "name": "Three",
+            "value":3
+        },
+        {
+            "id": "clubs-4",
+            "person": "June Carter",
+            "description": "Was a singer, songwriter, actress, and dancer who was married to Johnny Cash.",
+            "action": "Plays guitar with",
+            "object": "Johnny Cash",
+            "image": "/img/classic/s4.jpg",
+            "name": "Four",
+            "value":4
+        },
+        {
+            "id": "clubs-5",
+            "person": "Osama Bin Laden",
+            "description": "The founder of the militant islamist terror organization al-Qaeda.",
+            "action": "Records video of",
+            "object": "suicide bomber",
+            "image": "/img/classic/s5.jpg",
+            "name": "Five",
+            "value":5
+        },
+        {
+            "id": "clubs-6",
+            "person": "Lady Gaga",
+            "description": "Wore a dress made of meat in front of the paparazzi.",
+            "action": "Wears meat for",
+            "object": "paparazzi",
+            "image": "/img/classic/s6.jpg",
+            "name": "Six",
+            "value":6
+        },
+        {
+            "id": "clubs-7",
+            "person": "Stephen Hawking",
+            "description": "Spoke through a computer in a mechanical way.",
+            "action": "Sound robotic in",
+            "object": "wheelchair",
+            "image": "/img/classic/s7.jpg",
+            "name": "Seven",
+            "value":7
+        },
+        {
+            "id": "clubs-8",
+            "person": "Naomi Campbell",
+            "description": "an English model and actress who had a fight with her maid.",
+            "action": "Beats maid with",
+            "object": "handbag",
+            "image": "/img/classic/s8.jpg",
+            "name": "Eight",
+            "value":8
+        },
+        {
+            "id": "clubs-9",
+            "person": "Kevin Rose",
+            "description": "An American Internet entrepreneur and venture capitalist who founded Digg.<br>Rose has long been vocal about his love for high-quality teas, particularly Pu-erh from China's Yunnan province, which he considers a favorite.",
+            "action": "Drinks cup of",
+            "object": "tea",
+            "image": "/img/classic/s9.jpg",
+            "name": "Nine",
+            "value":9
+        },
+        {
+            "id": "clubs-10",
+            "person": "Sarah Palin",
+            "description": "A former governor of Alaska who went on a hunting trip and shot a moose.",
+            "action": "Riffle-shoots",
+            "object": "moose",
+            "image": "/img/classic/s10.jpg",
+            "name": "Ten",
+            "value":10
+        },
+        {
+            "id": "clubs-11",
+            "person": "Dalai Lama",
+            "description": "The spiritual leader of Tibetan Buddhism who prays a lot.",
+            "action": "Prays to",
+            "object": "Buddha",
+            "image": "/img/classic/s11.jpg",
+            "name": "Jack",
+            "value":11
+        },
+        {
+            "id": "clubs-12",
+            "person": "Victoria Beckham",
+            "description": "Known for spending a lot of time in front of the mirror.",
+            "action": "Does makeup in",
+            "object": "mirror",
+            "image": "/img/classic/s12.jpg",
+            "name": "Queen",
+            "value":12
+        },
+        {
+            "id": "clubs-13",
+            "person": "David Beckham",
+            "description": "Famous football player known for his free kicks.",
+            "action": "Kicks",
+            "object": "football",
+            "image": "/img/classic/s13.jpg",
+            "name": "King",
+            "value":13
+        }
+    ],
+    "diamonds": [
+        {
+            "id": "diamonds-1",
+            "person": "Michael Jordan",
+            "description": "Considered the greatest basketball player of all time.",
+            "action": "Slam dunks",
+            "object": "basketball",
+            "image": "/img/classic/d1.jpg",
+            "name": "Ace",
+            "value":1
+        },
+        {
+            "id": "diamonds-2",
+            "person": "Caroline Wozniacki",
+            "description": "A Danish professional tennis player who has won a Grand Slam title from .",
+            "action": "Grand slams",
+            "object": "Enrique Iglesias",
+            "image": "/img/classic/d2.jpg",
+            "name": "Two",
+            "value":2
+        },
+        {
+            "id": "diamonds-3",
+            "person": "George Clooney",
+            "description": "Famous actor known for his role in the movie Ocean's Eleven and for smoking.",
+            "action": "Smokes",
+            "object": "cigarette",
+            "image": "/img/classic/d3.jpg",
+            "name": "Three",
+            "value":3
+        },
+        {
+            "id": "diamonds-4",
+            "person": "Julia Roberts",
+            "description": "From a scene in Pretty Woman where she kisses Richard Gere's tongue and he is surprised.",
+            "action": "Tongue kisses",
+            "object": "Richard Gere",
+            "image": "/img/classic/d4.jpg",
+            "name": "Four",
+            "value":4
+        },
+        {
+            "id": "diamonds-5",
+            "person": "Joseph Stalin",
+            "description": "The leader of the Soviet Union from the mid-1920s until his death in 1953, known for his brutal regime.",
+            "action": "Jokes about",
+            "object": "bear",
+            "image": "/img/classic/d5.jpg",
+            "name": "Five",
+            "value":5
+        },
+        {
+            "id": "diamonds-6",
+            "person": "Madonna",
+            "description": "The Queen of Pop who was famous in the 80s for her unique style and music.",
+            "action": "Dances with",
+            "object": "ghettoblaster",
+            "image": "/img/classic/d6.jpg",
+            "name": "Six",
+            "value":6
+        },
+        {
+            "id": "diamonds-7",
+            "person": "Isaac Newton",
+            "description": "Famous physicist who formulated the laws of motion and universal gravitation and is said to have been inspired by an apple falling from a tree.",
+            "action": "Hit on head by",
+            "object": "apple",
+            "image": "/img/classic/d7.jpg",
+            "name": "Seven",
+            "value":7
+        },
+        {
+            "id": "diamonds-8",
+            "person": "Marylin Monroe",
+            "description": "Famous actress known for her iconic scene in the movie The Seven Year Itch, where her white dress is blown up by a subway vent.",
+            "action": "Flutter over",
+            "object": "subway vent",
+            "image": "/img/classic/d8.jpg",
+            "name": "Eight",
+            "value":8
+        },
+        {
+            "id": "diamonds-9",
+            "person": "Bill Gates",
+            "description": "Co-founder of Microsoft and pioneer of the personal computer revolution.",
+            "action": "Furiously reboot",
+            "object": "crashed PC",
+            "image": "/img/classic/d9.jpg",
+            "name": "Nine",
+            "value":9
+        },
+        {
+            "id": "diamonds-10",
+            "person": "Oprah Winfrey",
+            "description": "Famous talk show host known for giving away cars to her audience.",
+            "action": "Interviews",
+            "object": "couch",
+            "image": "/img/classic/d10.jpg",
+            "name": "Ten",
+            "value":10
+        },
+        {
+            "id": "diamonds-11",
+            "person": "Zeus",
+            "description": "The king of the gods in Greek mythology, known for wielding thunderbolts.",
+            "action": "Throws",
+            "object": "lighting bolt",
+            "image": "/img/classic/d11.jpg",
+            "name": "Jack",
+            "value":11
+        },
+        {
+            "id": "diamonds-12",
+            "person": "Princess Kate",
+            "description": "The Duchess of Cambridge, known for her elegant style and poise.",
+            "action": "In white before",
+            "object": "church",
+            "image": "/img/classic/d12.jpg",
+            "name": "Queen",
+            "value":12
+        },
+        {
+            "id": "diamonds-13",
+            "person": "Prince William",
+            "description": "The Duke of Cambridge, known for his military service and charitable work.",
+            "action": "Saves people from",
+            "object": "sea",
+            "image": "/img/classic/d13.jpg",
+            "name": "King",
+            "value":13
+        }
+    ],
+    "spades": [
+        {
+            "id": "spades-1",
+            "person": "Mohammad Ali",
+            "description": "Considered one of the greatest boxers of all time, known for his quick footwork and powerful punches.<br><br>\"Float like a butterfly\" refers to his nimble footwork and graceful movement, while \"sting like a bee\" refers to his powerful and effective punches.",
+            "action": "Knocks out",
+            "object": "butterfly",
+            "image": "/img/classic/c1.jpg",
+            "name": "Ace",
+            "value":1
+        },
+        {
+            "id": "spades-2",
+            "person": "Serena Williams",
+            "description": "Tennis player with 23 Grand Slam singles titles, known for her powerful serve and aggressive playing style.",
+            "action": "Raises",
+            "object": "trophy",
+            "image": "/img/classic/c2.jpg",
+            "name": "Two",
+            "value":2
+        },
+        {
+            "id": "spades-3",
+            "person": "Jack Sparrow",
+            "description": "Fictional character and the main protagonist of the Pirates of the Caribbean on his ship, the Black Pearl.",
+            "action": "Steals back",
+            "object": "Black Pearl",
+            "image": "/img/classic/c3.jpg",
+            "name": "Three",
+            "value":3
+        },
+        {
+            "id": "spades-4",
+            "person": "Lara Croft",
+            "description": "Fictional character and the main protagonist of the video game series Tomb Raider, known for her athleticism and combat skills.",
+            "action": "Karate kicks",
+            "object": "ancient tomb",
+            "image": "/img/classic/c4.jpg",
+            "name": "Four",
+            "value":4
+        },
+        {
+            "id": "spades-5",
+            "person": "Adolf Hitler",
+            "description": "Goose-stepping is a military exercise type where you lift your legs high and swing them down forcefully.",
+            "action": "Goose-steps into",
+            "object": "bunker",
+            "image": "/img/classic/c5.jpg",
+            "name": "Five",
+            "value":5
+        },
+        {
+            "id": "spades-6",
+            "person": "Rihanna",
+            "description": "Famous pop singer known for her hit songs and unique style, was caught in a rainstorm and used an umbrella to stay dry.",
+            "action": "Uses umbrella for",
+            "object": "rainstorm",
+            "image": "/img/classic/c6.jpg",
+            "name": "Six",
+            "value":6
+        },
+        {
+            "id": "spades-7",
+            "person": "Thomas Edison",
+            "description": "Famous inventor known for inventing the phonograph, the motion picture camera, and the electric light bulb.",
+            "action": "Screws in",
+            "object": "light bulb",
+            "image": "/img/classic/c7.jpg",
+            "name": "Seven",
+            "value":7
+        },
+        {
+            "id": "spades-8",
+            "person": "Medusa",
+            "description": "A character from Greek mythology who had snakes for hair and could turn people to stone with her gaze.",
+            "action": "Turns into",
+            "object": "stone",
+            "image": "/img/classic/c8.jpg",
+            "name": "Eight",
+            "value":8
+        },
+        {
+            "id": "spades-9",
+            "person": "Mark Zuckerberg",
+            "description": "Co-founder and CEO of Facebook, known for his social media platform and philanthropy. He once unfriended his best friend on Facebook.",
+            "action": "Unfriends",
+            "object": "best friend",
+            "image": "/img/classic/c9.jpg",
+            "name": "Nine",
+            "value":9
+        },
+        {
+            "id": "spades-10",
+            "person": "Hillary Clinton",
+            "description": "Former U.S. Secretary of State who was involved in a scandal with Monica Lewinsky, because of her husband Bill Clinton having an affair with Lewinsky.",
+            "action": "Smacks",
+            "object": "Monica Lewinsky",
+            "image": "/img/classic/c10.jpg",
+            "name": "Ten",
+            "value":10
+        },
+        {
+            "id": "spades-11",
+            "person": "Pope John-Paul II",
+            "description": "The head of the Catholic Church from 1978 to 2005, known for his efforts to improve relations with other religions and his travels around the world.",
+            "action": "Forgives",
+            "object": "devil",
+            "image": "/img/classic/c11.jpg",
+            "name": "Jack",
+            "value":11
+        },
+        {
+            "id": "spades-12",
+            "person": "Beyonce",
+            "description": "Famous pop singer known for her powerful voice and energetic performances, often referred to as Queen Bey.",
+            "action": "Power dances on",
+            "object": "beach",
+            "image": "/img/classic/c12.jpg",
+            "name": "Queen",
+            "value":12
+        },
+        {
+            "id": "spades-13",
+            "person": "Jay-Z",
+            "description": "Famous rapper and music producer known for his successful career and business ventures.",
+            "action": "Raps into",
+            "object": "microphone",
+            "image": "/img/classic/c13.jpg",
+            "name": "King",
+            "value":13
+        }
+    ]
+}
