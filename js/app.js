@@ -40,12 +40,10 @@ btnFullscreen.onclick = () => toggleFullscreenMode();
 
 /**
  * Starts the app.
- * @returns {Promise<void>}
- */
+  */
 function start() {
 
-    $.getJSON("../data/pao/default.json", function (json) {
-        console.log(json); // this will show the info it in firebug console
+    $.getJSON("../data/matrix/default.json", function (json) {
 
         const matrix = new Matrix();
         try {
@@ -53,6 +51,7 @@ function start() {
             const quiz = new Quiz(matrix.currentMatrix);
             quiz.load();
             setupEvents();
+
         } catch (e) {
             showError("An error occurred.", e);
         }

@@ -41,7 +41,6 @@ export class Quiz {
      * @param matrix
      */
     constructor(matrix) {
-        this.BASE_ENDPOINT = "http://localhost:8080/api/v1/";
 
         this.matrix = matrix;
         this.cardUtil = new CardUtil();
@@ -134,7 +133,6 @@ export class Quiz {
     load() {
         const ref = this;
         $.getJSON("../data/palace/default.json", function (json) {
-            console.log(json); // this will show the info it in firebug console
 
             ref.currentQuiz = ref.loadQuiz();
             ref.currentPalace = json;
@@ -158,35 +156,6 @@ export class Quiz {
         });
 
         return this.quizCards;
-        /*
-        const endpoint = `${this.BASE_ENDPOINT}quiz`;
-        try {
-            const response = await fetch(endpoint);
-            if (response.ok) {
-                return await response.json();
-            }
-        } catch (e) {
-            throw new Error("Failed to fetch quiz data.");
-        }
-
-         */
-    }
-
-    /**
-     * Loads the palace from its REST endpoint.
-     * @param name
-     * @returns {Promise<any>}
-     */
-    async loadPalace(name) {
-        const endpoint = `${this.BASE_ENDPOINT}palace/${name}`
-        try {
-            const response = await fetch(endpoint);
-            if (response.ok) {
-                return await response.json();
-            }
-        } catch (e) {
-            throw new Error("Failed to fetch palace data.");
-        }
     }
 
     /**
