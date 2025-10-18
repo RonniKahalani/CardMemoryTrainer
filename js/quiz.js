@@ -28,8 +28,8 @@ SOFTWARE.
 /**
  * Handles the quiz and palace features.
  */
-import {CardUtil} from "./card-util.js";
-import {Timer} from "./timer.js";
+import { CardUtil } from "./card-util.js";
+import { Timer } from "./timer.js";
 
 /**
  * The quiz feature.
@@ -149,9 +149,11 @@ export class Quiz {
         this.quizCards = [];
         this.matrix.SUITS.forEach(suit => {
             const cards = this.matrix.currentMatrix[suit].forEach(card => {
-                this.quizCards[this.quizCards.length] = {suit: suit, name: card.name, value: card.value};
+                this.quizCards[this.quizCards.length] = { suit: suit, name: card.name, value: card.value };
             });
         });
+
+        this.shuffle(this.quizCards);
     }
 
     /**
@@ -169,7 +171,7 @@ export class Quiz {
         let persons = this.quizCards.map(x => x.pao.person).sort();
         let actions = this.quizCards.map(x => this.cardUtil.properCase(x.pao.action)).sort();
         let objects = this.quizCards.map(x => this.cardUtil.properCase(x.pao.object)).sort();
-        let cards = this.quizCards.map(x => `${x.value} (${x.name}) of ${x.suit}`).sort(this.cardNameSorter);
+        let cards = this.quizCards.map(x => `${x.value} (${this.cardUtil.properCase(x.name)}) of ${this.cardUtil.properCase(x.suit)}`).sort(this.cardNameSorter);
 
         this.setQuizSelectOptions(this.quizPerson, persons);
         this.setQuizSelectOptions(this.quizAction, actions);
@@ -364,7 +366,7 @@ export class Quiz {
     isAllAnswersCorrect() {
 
         for (let entry of this.answers) {
-            if (!entry.correct) return false;
+            if (entry.correct === undefined || !entry.correct) return false;
         }
 
         return true;
@@ -691,37 +693,45 @@ export class Quiz {
         document.getElementById("palace-loci-" + this.currentLociIndex).style.display = "block";
 
         for (let i = 0; i < 52; i++) {
-            let index = i + 1;
-            let currentPalaceEntry = palace[i];
-
-            try {
-                this.setInnerHTML(`palace-label-${index}`, `${currentPalaceEntry.label} (${index} of 17)`);
-                this.setBackgroundImage(`palace-image-${index}`, currentPalaceEntry.image);
-                this.setInnerHTML(`palace-info-${index}`, currentPalaceEntry.info);
-            } catch (e) {
-                // HACK! console.log("Weird things happened after the 6th item");
-            }
-
             const svgUrl = this.cardUtil.getSVGCardImageUrl(this.quizCards[i].pao);
-            this.setInnerHTML(`palace-item-${index}`, `<img src="${svgUrl}" class="card" alt="">`);
+            this.setInnerHTML(`palace-item-${i + 1}`, `<img src="${svgUrl}" class="card" alt="">`);
+        }
 
-            if (i > 0 && (i + 1) % 3 === 0) {
-                const id = (i + 1) / 3;
-                const quizPerson = this.quizCards[i - 2].pao.person;
-                const action = this.quizCards[i - 1].pao.action;
-                const quizAction = this.cardUtil.lowerCaseFirstLetter(action);
-                const quizObject = this.quizCards[i].pao.object;
-
-                // Set a 3 colored phrase.
-                this.setInnerHTML(`palace-phrase-${id}`, `<span class="phrase-color1">${quizPerson}</span> <span class="phrase-color2">${quizAction}</span> <span class="phrase-color3">${quizObject}</span>`);
-            }
-
-            if (i === 51) {
-                this.setInnerHTML("palace-phrase-18", this.quizCards[i].pao.person);
-            }
+        for (let i = 0; i < 18; i++) {
+            this.renderLoci(i + 1, palace[i]);
         }
     }
 
+    /**
+     * Renders a single loci in the palace.
+     * @param index
+     */
+    renderLoci(index, currentPalaceEntry) {
+
+        try {
+            this.setInnerHTML(`palace-label-${index}`, `${currentPalaceEntry.label} (${index} of 17)`);
+            this.setBackgroundImage(`palace-image-${index}`, currentPalaceEntry.image);
+            this.setInnerHTML(`palace-info-${index}`, currentPalaceEntry.info);
+        } catch (e) {
+            // HACK! console.log("Weird things happened after the 6th item");
+        }
+
+        this.setInnerHTML("palace-phrase-18", this.quizCards[51].pao.person);
+        let i = (index - 1) * 3;
+        const quizPerson = this.quizCards[i].pao.person;
+
+        if (index < 17) {
+            const action = this.quizCards[i + 1].pao.action;
+            const quizAction = this.cardUtil.lowerCaseFirstLetter(action);
+            const quizObject = this.quizCards[i + 2].pao.object;
+
+            // Set a 3 colored phrase.
+            this.setInnerHTML(`palace-phrase-${index}`, `<span class="phrase-color1">${quizPerson}</span> <span class="phrase-color2">${quizAction}</span> <span class="phrase-color3">${quizObject}</span>`);
+        } else {
+            // Set a single colored phrase.
+            this.setInnerHTML(`palace-phrase-${index}`, `<span class="phrase-color1">${quizPerson}</span>`);
+        }
+    }
     /**
      * Navigates to the previous palace loci.
      */
