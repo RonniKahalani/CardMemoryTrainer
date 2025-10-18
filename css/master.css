@@ -604,11 +604,9 @@ header {
     background-color: black;
 }
 
-.section hr {
+hr {
     color: #0d6efd;
-    text-align: center;
-    margin: auto;
-    padding-bottom: 20px;
+    margin: 15px 0px;
 }
 
 .section-markup-blue {
@@ -631,28 +629,12 @@ header {
     padding: 50px;
 }
 
-#section-matrix {
-}
-
-
-#section-do-it {
-
-}
-#section-quiz {
-
-}
-#section-memory-palace {
-
-}
-
-
 .section-subtitle {
     font-size: 30pt;
     color: #0d6efd;
 }
 
 .section-row {
-    margin-bottom: 20px;
     padding: 50px;
     text-align: center;
     width: 100%;

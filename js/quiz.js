@@ -362,11 +362,9 @@ export class Quiz {
      * @returns {boolean}
      */
     isAllAnswersCorrect() {
-        let isAllCorrect = false;
 
         for (let entry of this.answers) {
-            isAllCorrect = entry.correct;
-            if (!isAllCorrect) return false;
+            if (!entry.correct) return false;
         }
 
         return true;
