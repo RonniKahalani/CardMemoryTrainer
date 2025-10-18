@@ -365,6 +365,11 @@ export class Quiz {
      */
     isAllAnswersCorrect() {
 
+        // Has all cards been answered?
+        if(this.answers.length < 52) {
+            return false;
+        }
+
         for (let entry of this.answers) {
             if (entry.correct === undefined || !entry.correct) return false;
         }
