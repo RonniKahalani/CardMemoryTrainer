@@ -135,7 +135,7 @@ header {
     text-align: center;
     width: 33%;
     display: inline-block;
-
+    vertical-align: top;
 }
 
 #panel-right {
@@ -227,7 +227,7 @@ header {
 
 .quiz-select-group {
     max-width: 300px;
-    margin:auto
+    margin: auto
 }
 
 #quiz-select-person {
@@ -514,6 +514,8 @@ header {
 
 #btn-fullscreen {
     cursor: pointer;
+    float: right;
+    margin: 20px;
 }
 
 .phrase-color1 {
@@ -666,7 +668,7 @@ hr {
 #quiz-progress {
     position: absolute;
     left: 0;
-    margin-top:150px;
+    margin-top: 150px;
     width: 100%;
     background-color: #000000;
     opacity: 85;
