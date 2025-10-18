@@ -72,7 +72,7 @@ header {
 .palace-image {
     width: 600px;
     height: 400px;
-    margin:auto;
+    margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -102,12 +102,12 @@ header {
     padding-top: 130px;
 }
 
-.palace-item > img {
+.palace-item>img {
     box-shadow: #2b2b2b 2px 2px 5px;
 }
 
 .quiz-button-group {
-    padding-top:5px;
+    padding-top: 5px;
 }
 
 #tipModal {
@@ -116,7 +116,6 @@ header {
 
 #panel {
     width: 100%;
-    height:70px;
     margin: 0;
     background-color: black;
     border-bottom: #2f363c;
@@ -128,18 +127,25 @@ header {
 }
 
 #panel-left {
-
+    width: 33%;
+    display: inline-block;
 }
 
 #panel-center {
     text-align: center;
+    width: 33%;
+    display: inline-block;
+
 }
 
 #panel-right {
     vertical-align: middle;
+    width: 33%;
+    display: inline-block;
 }
 
 #content {
+    width: 100%;
 }
 
 #card-counter-content {
@@ -147,8 +153,7 @@ header {
     color: #0d6efd;
 }
 
-#card-counter {
-}
+#card-counter {}
 
 #pao-matrix {
     display: none;
@@ -177,7 +182,7 @@ header {
     display: flex;
     flex-direction: row;
     vertical-align: middle;
-    margin:auto;
+    margin: auto;
 }
 
 .quiz-label {
@@ -185,10 +190,10 @@ header {
 }
 
 .quiz-select {
-    width:250px;
+    width: 250px;
     height: 40px;
     border: 3px solid black;
-    margin:0
+    margin: 0
 }
 
 .quiz-check {
@@ -213,24 +218,16 @@ header {
 }
 
 #quiz-content {
-    display: flex;
-    flex-direction: row;
     width: 100%;
-}
-
-#quiz-left {
-    width: 33%;
 }
 
 #quiz-center {
     text-align: center;
-    width: 33%;
-    display: flex;
-    flex-direction: column;
 }
 
-#quiz-right {
-    width: 33%;
+.quiz-select-group {
+    max-width: 300px;
+    margin:auto
 }
 
 #quiz-select-person {
@@ -336,9 +333,7 @@ header {
     text-transform: uppercase;
 }
 
-#pao-rows {
-
-}
+#pao-rows {}
 
 .pao-row {
     color: white;
@@ -346,11 +341,11 @@ header {
     flex-direction: row;
 }
 
-#pao-rows > div:nth-child(even) {
+#pao-rows>div:nth-child(even) {
     background: black
 }
 
-#pao-rows > div:nth-child(odd) {
+#pao-rows>div:nth-child(odd) {
     background: #DF0000
 }
 
@@ -629,7 +624,7 @@ hr {
 }
 
 .suit-column {
-    width:50px;
+    width: 50px;
 }
 
 .suit-heart-big {
@@ -641,9 +636,11 @@ hr {
 .suit-spade-big {
     color: black;
 }
+
 .suit-diamond-big {
     color: #DF0000;
 }
+
 .suit-club-big {
     color: black;
     border-bottom-left-radius: 10px;
@@ -664,4 +661,25 @@ hr {
 .form-check-input:checked {
     background-color: #198754;
     border: 1px solid white;
+}
+
+#quiz-progress {
+    position: absolute;
+    left: 0;
+    margin-top:150px;
+    width: 100%;
+    background-color: #000000;
+    opacity: 85;
+}
+
+.quiz-card-answer-status {
+    font-size: 9pt;
+    margin: 3px;
+    padding: 3px;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
 }

@@ -95,6 +95,7 @@ export class Quiz {
 
         this.quizFeature = document.getElementById("quiz-feature");
         this.quizFront = document.getElementById("quiz-front");
+        this.quizProgress = document.getElementById("quiz-progress");
 
         document.getElementById("quiz-start").onclick = () => this.startQuiz();
         document.getElementById("btn-quiz-next").onclick = () => this.nextQuizCard();
@@ -105,6 +106,7 @@ export class Quiz {
         document.getElementById("btn-prev-loci").onclick = () => this.prevLoci();
         document.getElementById("btn-reveal-loci-cards").onclick = () => this.revealLociCards();
         document.getElementById("btn-next-loci").onclick = () => this.nextLoci();
+        document.getElementById("btn-quiz-progress").onclick = () => this.toggleQuizProgress();
 
         this.cardCounter = document.getElementById("card-counter");
         this.currentQuiz = null;
@@ -115,6 +117,14 @@ export class Quiz {
         this.load();
     }
 
+    /**
+     * Toggles the quiz status display.
+     */
+    toggleQuizProgress() {
+        const style = this.quizProgress.style;
+        const isVisible = !(style.display === "none");
+        style.display = isVisible ? "none" : "block";
+    }
     /**
      * Handles focus changes on quiz elements.
      * @param elem
@@ -298,23 +308,21 @@ export class Quiz {
     /**
      * Sets a select background color based on if it is a correct value, wrong value or the first neutral entry.
      * @param select
-     * @param isCorrect
+     * @param correct
      */
-    setSelectColor(select, isCorrect) {
+    setSelectColor(select, correct) {
         if (select.selectedIndex === 0) {
             select.classList.remove("quiz-select-wrong", "quiz-select-correct");
             select.classList.add("quiz-select-neutral");
             return;
         }
 
-        if (isCorrect) {
+        if (correct) {
             select.classList.remove("quiz-select-neutral", "quiz-select-wrong");
             select.classList.add("quiz-select-correct");
-            console.log("CORRECT")
         } else {
             select.classList.remove("quiz-select-neutral", "quiz-select-correct");
             select.classList.add("quiz-select-wrong");
-            console.log("WRONG")
         }
     }
 
@@ -342,6 +350,9 @@ export class Quiz {
             "index": this.quizCard.selectedIndex
         };
         answer.correct = answer.person.correct && answer.action.correct && answer.object.correct && answer.card.correct;
+
+        const statusElem = document.getElementById(`quiz-card-answer-status-${this.currentQuizIndex + 1}`);
+        statusElem.style.backgroundColor = answer.correct ? "green" : "red";
 
         this.answers[this.currentQuizIndex] = answer;
     }

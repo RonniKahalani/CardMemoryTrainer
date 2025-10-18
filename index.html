@@ -32,11 +32,13 @@
 <body>
     <header>
 
-        <div id="panel" class="row">
-            <div id="panel-left" class="col-4 p-2">
+        <div id="panel">
+
+            <div id="panel-left">
                 <span id="panel-title">Card Memory Trainer</span>
             </div>
-            <div id="panel-center" class="col-4 p-2">
+
+            <div id="panel-center">
                 <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2"
                     role="tablist"
                     style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
@@ -68,7 +70,7 @@
                 </ul>
             </div>
 
-            <div id="panel-right" class="row text-end col-4 p-2">
+            <div id="panel-right" class="text-end">
                 <i id="btn-fullscreen" class="bi bi-fullscreen mt-2" title="Toggle Full Screen Mode"></i>
             </div>
         </div>
@@ -262,37 +264,48 @@
                         inspiration from the wind.</div>
                     <hr>
                     <div class="section-subtitle">7. Garden - Snack on Fancy Roses</div>
-                    <div class="section-message">Nibbling roses is reimagined as munching on nature’s snootiest snack, like a quirky gourmet.</div>
+                    <div class="section-message">Nibbling roses is reimagined as munching on nature’s snootiest snack,
+                        like a quirky gourmet.</div>
                     <hr>
                     <div class="section-subtitle">8. Stairway - Ascend to Cozy Glory</div>
-                    <div class="section-message">Going upstairs is now a grand climb to the land of relaxation and sweatpants.</div>
+                    <div class="section-message">Going upstairs is now a grand climb to the land of relaxation and
+                        sweatpants.</div>
                     <hr>
                     <div class="section-subtitle">9. Master Bedroom - Swap Suit for Snuggly Slob Mode</div>
-                    <div class="section-message">Changing clothes becomes a gleeful transformation into the ultimate comfort creature.</div>
+                    <div class="section-message">Changing clothes becomes a gleeful transformation into the ultimate
+                        comfort creature.</div>
                     <hr>
                     <div class="section-subtitle">10. Nursery - Sneak a Peek at the Tiny Overlord</div>
-                    <div class="section-message">Checking on the baby is like spying on a pint-sized dictator plotting world domination.</div>
+                    <div class="section-message">Checking on the baby is like spying on a pint-sized dictator plotting
+                        world domination.</div>
                     <hr>
                     <div class="section-subtitle">11. Kids Bedroom - High-Five the Gamer Gremlins</div>
-                    <div class="section-message">Greeting your teens is now a chaotic, fist-bumping encounter with joystick-obsessed mini-beasts.</div>
+                    <div class="section-message">Greeting your teens is now a chaotic, fist-bumping encounter with
+                        joystick-obsessed mini-beasts.</div>
                     <hr>
                     <div class="section-subtitle">12. Bathroom - Polish the Human Shine</div>
-                    <div class="section-message">Freshening up is like buffing a statue to restore your glorious sparkle.</div>
+                    <div class="section-message">Freshening up is like buffing a statue to restore your glorious
+                        sparkle.</div>
                     <hr>
                     <div class="section-subtitle">13. Attic - Hunt for Nostalgic Treasure</div>
-                    <div class="section-message">Looking for family albums becomes a dusty Indiana Jones-style quest, with creepy roof noises as the villain.</div>
+                    <div class="section-message">Looking for family albums becomes a dusty Indiana Jones-style quest,
+                        with creepy roof noises as the villain.</div>
                     <hr>
                     <div class="section-subtitle">14. Roof - Sleuth the Skyline Shenanigans</div>
-                    <div class="section-message">Investigating the roof is now a detective mission to uncover rooftop mysteries.</div>
+                    <div class="section-message">Investigating the roof is now a detective mission to uncover rooftop
+                        mysteries.</div>
                     <hr>
                     <div class="section-subtitle">15. Chimney - Spy the Chimney Squatter</div>
-                    <div class="section-message">Watching something on the chimney feels like catching a shady pigeon or squirrel loitering suspiciously.</div>
+                    <div class="section-message">Watching something on the chimney feels like catching a shady pigeon or
+                        squirrel loitering suspiciously.</div>
                     <hr>
                     <div class="section-subtitle">16. Sky - Blast Off to Cloud City</div>
-                    <div class="section-message">Taking off into the sky is a superhero-style launch into the heavens.</div>
+                    <div class="section-message">Taking off into the sky is a superhero-style launch into the heavens.
+                    </div>
                     <hr>
                     <div class="section-subtitle">17. Moon - Lunar Road Trip</div>
-                    <div class="section-message">Going to the moon is like flooring it in a cosmic convertible, aiming for the ultimate destination.</div>
+                    <div class="section-message">Going to the moon is like flooring it in a cosmic convertible, aiming
+                        for the ultimate destination.</div>
 
 
                 </div>
@@ -321,21 +334,82 @@
 
             <div id="quiz-content">
 
-                <div id="quiz-left">
-                    <!-- Intentionally left blank for future content or styling -->
-                </div>
 
                 <div id="quiz-center">
 
                     <div id="quiz-feature">
+
+                        <div id="quiz-progress" style="display:none">
+                            <div>
+                                <span id="quiz-card-answer-status-1" class="quiz-card-answer-status">1</span>
+                                <span id="quiz-card-answer-status-2" class="quiz-card-answer-status">2</span>
+                                <span id="quiz-card-answer-status-3" class="quiz-card-answer-status">3</span>
+                                <span id="quiz-card-answer-status-4" class="quiz-card-answer-status">4</span>
+                                <span id="quiz-card-answer-status-5" class="quiz-card-answer-status">5</span>
+                                <span id="quiz-card-answer-status-6" class="quiz-card-answer-status">6</span>
+                                <span id="quiz-card-answer-status-7" class="quiz-card-answer-status">7</span>
+                                <span id="quiz-card-answer-status-8" class="quiz-card-answer-status">8</span>
+                                <span id="quiz-card-answer-status-9" class="quiz-card-answer-status">9</span>
+                                <span id="quiz-card-answer-status-10" class="quiz-card-answer-status">10</span>
+                                <span id="quiz-card-answer-status-11" class="quiz-card-answer-status">11</span>
+                                <span id="quiz-card-answer-status-12" class="quiz-card-answer-status">12</span>
+                                <span id="quiz-card-answer-status-13" class="quiz-card-answer-status">13</span>
+                            </div>
+                            <div>
+                                <span id="quiz-card-answer-status-14" class="quiz-card-answer-status">14</span>
+                                <span id="quiz-card-answer-status-15" class="quiz-card-answer-status">15</span>
+                                <span id="quiz-card-answer-status-16" class="quiz-card-answer-status">16</span>
+                                <span id="quiz-card-answer-status-17" class="quiz-card-answer-status">17</span>
+                                <span id="quiz-card-answer-status-18" class="quiz-card-answer-status">18</span>
+                                <span id="quiz-card-answer-status-19" class="quiz-card-answer-status">19</span>
+                                <span id="quiz-card-answer-status-20" class="quiz-card-answer-status">20</span>
+                                <span id="quiz-card-answer-status-21" class="quiz-card-answer-status">21</span>
+                                <span id="quiz-card-answer-status-22" class="quiz-card-answer-status">22</span>
+                                <span id="quiz-card-answer-status-23" class="quiz-card-answer-status">23</span>
+                                <span id="quiz-card-answer-status-24" class="quiz-card-answer-status">24</span>
+                                <span id="quiz-card-answer-status-25" class="quiz-card-answer-status">25</span>
+                                <span id="quiz-card-answer-status-26" class="quiz-card-answer-status">26</span>
+                            </div>
+                            <div>
+                                <span id="quiz-card-answer-status-27" class="quiz-card-answer-status">27</span>
+                                <span id="quiz-card-answer-status-28" class="quiz-card-answer-status">28</span>
+                                <span id="quiz-card-answer-status-29" class="quiz-card-answer-status">29</span>
+                                <span id="quiz-card-answer-status-30" class="quiz-card-answer-status">30</span>
+                                <span id="quiz-card-answer-status-31" class="quiz-card-answer-status">31</span>
+                                <span id="quiz-card-answer-status-32" class="quiz-card-answer-status">32</span>
+                                <span id="quiz-card-answer-status-33" class="quiz-card-answer-status">33</span>
+                                <span id="quiz-card-answer-status-34" class="quiz-card-answer-status">34</span>
+                                <span id="quiz-card-answer-status-35" class="quiz-card-answer-status">35</span>
+                                <span id="quiz-card-answer-status-36" class="quiz-card-answer-status">36</span>
+                                <span id="quiz-card-answer-status-37" class="quiz-card-answer-status">37</span>
+                                <span id="quiz-card-answer-status-38" class="quiz-card-answer-status">38</span>
+                                <span id="quiz-card-answer-status-39" class="quiz-card-answer-status">39</span>
+                            </div>
+                            <div>
+                                <span id="quiz-card-answer-status-40" class="quiz-card-answer-status">40</span>
+                                <span id="quiz-card-answer-status-41" class="quiz-card-answer-status">41</span>
+                                <span id="quiz-card-answer-status-42" class="quiz-card-answer-status">42</span>
+                                <span id="quiz-card-answer-status-43" class="quiz-card-answer-status">43</span>
+                                <span id="quiz-card-answer-status-44" class="quiz-card-answer-status">44</span>
+                                <span id="quiz-card-answer-status-45" class="quiz-card-answer-status">45</span>
+                                <span id="quiz-card-answer-status-46" class="quiz-card-answer-status">46</span>
+                                <span id="quiz-card-answer-status-47" class="quiz-card-answer-status">47</span>
+                                <span id="quiz-card-answer-status-48" class="quiz-card-answer-status">48</span>
+                                <span id="quiz-card-answer-status-49" class="quiz-card-answer-status">49</span>
+                                <span id="quiz-card-answer-status-50" class="quiz-card-answer-status">50</span>
+                                <span id="quiz-card-answer-status-51" class="quiz-card-answer-status">51</span>
+                                <span id="quiz-card-answer-status-52" class="quiz-card-answer-status">32</span>
+                            </div>
+                        </div>
+
                         <div id="quiz-input">
                             <div id="card-counter-content">
                                 Card <span id="card-counter">1</span> of 52
                             </div>
 
                             <img id="quiz-image" src="" alt="Quiz image">
-                            <div id="stopWatch" class="row">
-                                <div id="timer" class="col-12">00 : 00 : 00</div>
+                            <div id="stopWatch">
+                                <div id="timer">00 : 00 : 00</div>
                                 <div>
                                     <button id="btn-quiz-prev" class="btn btn-primary" title="Previous"><i
                                             class="bi bi-chevron-double-left"></i>
@@ -354,39 +428,45 @@
                             </div>
 
                             <div class="text-center">
-                                <div class="quiz-select-div row">
-                                    <label for="quiz-select-person" class="quiz-label col-1" hidden>Person</label>
-                                    <select id="quiz-select-person" class="quiz-select form-select" accesskey="p">
-                                        <option value="">Select Person (Alt+P)</option>
-                                    </select>
-                                    <input id="quiz-reveal-person" class="form-check-input quiz-check col-1"
-                                        type="checkbox" title="Auto reveal">
-                                </div>
-                                <div class="quiz-select-div row">
-                                    <label for="quiz-select-action" class="quiz-label col-1" hidden>Action</label>
-                                    <select id="quiz-select-action" class="quiz-select form-select" accesskey="a">
-                                        <option value="">Select Action (Alt+A)</option>
-                                    </select>
-                                    <input id="quiz-reveal-action" class="form-check-input quiz-check col-1"
-                                        type="checkbox" title="Auto reveal">
-                                </div>
+                                <div class="quiz-select-group">
+                                    <div class="quiz-select-div row">
+                                        <label for="quiz-select-person" class="quiz-label col-1" hidden>Person</label>
+                                        <select id="quiz-select-person" class="quiz-select form-select col-sm"
+                                            accesskey="p" title="Select Person">
+                                            <option value="">Select Person (Alt+P)</option>
+                                        </select>
+                                        <input id="quiz-reveal-person" class="form-check-input quiz-check col-1"
+                                            type="checkbox" title="Toggle Auto Reveal Person">
+                                    </div>
+                                    <div class="quiz-select-div row">
+                                        <label for="quiz-select-action" class="quiz-label col-1" hidden>Action</label>
+                                        <select id="quiz-select-action" class="quiz-select form-select col-sm"
+                                            accesskey="a" title="Select Action">
+                                            <option value="">Select Action (Alt+A)</option>
+                                        </select>
+                                        <input id="quiz-reveal-action" class="form-check-input quiz-check col-1"
+                                            type="checkbox" title="Toggle Auto Reveal Action">
+                                    </div>
 
-                                <div class="quiz-select-div row">
-                                    <label for="quiz-select-object" class="quiz-label col-1" hidden>Object</label>
-                                    <select id="quiz-select-object" class="quiz-select form-select" accesskey="o">
-                                        <option value="">Select Object (Alt+O)</option>
-                                    </select>
-                                    <input id="quiz-reveal-object" class="form-check-input quiz-check col-1"
-                                        type="checkbox" title="Auto reveal">
-                                </div>
+                                    <div class="quiz-select-div row">
+                                        <label for="quiz-select-object" class="quiz-label col-1" hidden>Object</label>
+                                        <select id="quiz-select-object" class="quiz-select form-select col-sm"
+                                            accesskey="o" title="Select Object">
+                                            <option value="">Select Object (Alt+O)</option>
+                                        </select>
+                                        <input id="quiz-reveal-object" class="form-check-input quiz-check col-1"
+                                            type="checkbox" title="Toggle Auto Reveal Object">
+                                    </div>
 
-                                <div class="quiz-select-div row">
-                                    <label for="quiz-select-card" class="quiz-label col-1" hidden>Card</label>
-                                    <select id="quiz-select-card" class="quiz-select form-select" accesskey="c">
-                                        <option value="">Select Card (Alt+C)</option>
-                                    </select>
-                                    <input id="quiz-reveal-card" class="form-check-input quiz-check col-1"
-                                        type="checkbox" title="Auto reveal">
+                                    <div class="quiz-select-div row">
+                                        <label for="quiz-select-card" class="quiz-label col-1" hidden>Card</label>
+                                        <select id="quiz-select-card" class="quiz-select form-select col-sm"
+                                            accesskey="c" title="Select Card">
+                                            <option value="">Select Card (Alt+C)</option>
+                                        </select>
+                                        <input id="quiz-reveal-card" class="form-check-input quiz-check col-1"
+                                            type="checkbox" title="Toggle Auto Reveal Card">
+                                    </div>
                                 </div>
                             </div>
 
@@ -407,14 +487,21 @@
 
                                 <button id="btn-quiz-reveal-all" class="btn btn-primary btn-sm"
                                     title="Reveal All (Alt-R)" accesskey="r"
-                                    onclick="document.getElementById('quiz-reveal-all').click()">Reveal All
+                                    onclick="document.getElementById('quiz-reveal-all').click()">Auto Reveal
+                                    All
                                 </button>
                                 <!-- Hidden, currently not used!!! -->
                                 <button id="btn-quiz-reveal" hidden>...</button>
                             </div>
+                            <div class="quiz-button-group">
+                                <button id="btn-quiz-progress" class="btn btn-primary btn-sm" accesskey="t"
+                                    title="Progress (Alt-T)">
+                                    Toggle Progress
+                                </button>
+                            </div>
                         </div>
-
                     </div>
+
                     <p id="fulltime"></p>
                     <div id="quiz-front">
                         <h4 class="section-subtitle">PAO Matrix Quiz</h4>
@@ -423,9 +510,7 @@
                     </div>
                 </div>
 
-                <div id="quiz-right">
-                    <!-- Intentionally left blank for future content or styling -->
-                </div>
+
             </div>
         </div>
 
@@ -1378,7 +1463,9 @@
     </div>
 
     <!-- Notifications -->
-    <div class="toast" id="toast-current-answer-correct" data-delay="4000">
+
+    <!-- Current Quiz Card Correct -->
+    <div class="toast" id="toast-current-answer-correct" data-delay="10000">
         <div class="toast-header">
             <strong class="me-auto"><i class="bi-gift-fill"></i> Current card is correct!</strong>
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -1387,7 +1474,8 @@
             Well done, you solved the current card! Use Alt-N for next card.</div>
     </div>
 
-    <div class="toast" id="toast-all-answers-correct" data-delay="4000">
+    <!-- All Quiz Cards Correct -->
+    <div class="toast" id="toast-all-answers-correct" data-delay="10000">
         <div class="toast-header">
             <strong class="me-auto"><i class="bi-gift-fill"></i> All quiz answers correct!</strong>
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
