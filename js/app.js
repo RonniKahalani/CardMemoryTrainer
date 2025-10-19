@@ -34,9 +34,6 @@ import { TabHandler } from "./tab.js";
 const tabHandler = new TabHandler();
 window.addEventListener('DOMContentLoaded', start);
 
-const btnFullscreen = document.getElementById("btn-fullscreen");
-btnFullscreen.onclick = () => toggleFullscreenMode();
-
 /**
  * Starts the app.
   */
@@ -65,6 +62,10 @@ function showError(msg, status) {
  */
 function setupEvents() {
     tabHandler.setupTabEvents();
+
+    document.getElementById("btn-fullscreen").onclick = () => toggleFullscreenMode();
+    document.getElementById("btn-help").onclick = () => window.open("https://github.com/RonniKahalani/CardMemoryTrainer/wiki", "_blank");
+    document.getElementById("btn-disc").onclick = () => window.open("https://github.com/RonniKahalani/CardMemoryTrainer/discussions", "_blank");
 }
 
 

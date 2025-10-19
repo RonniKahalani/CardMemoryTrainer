@@ -34,7 +34,7 @@ export class TabHandler {
      * Constructor.
      */
     constructor() {
-        this.tabs = ["pao-home", "pao-matrix", "pao-quiz", "pao-palace", "pao-instructions"];
+        this.tabs = ["pao-home", "pao-matrix", "pao-quiz", "pao-palace"];
     }
 
     /**
@@ -59,7 +59,7 @@ export class TabHandler {
     * Sets up the tab events.
     */
     setupTabEvents() {
-        const tabNames = ["home", "matrix", "quiz", "palace", "instructions"];
+        const tabNames = ["home", "matrix", "quiz", "palace"];
 
         tabNames.forEach(name => {
             document.getElementById(`btn-${name}`).onclick = () => this.showTab(`pao-${name}`);
