@@ -68,7 +68,6 @@ function setupEvents() {
     document.getElementById("btn-disc").onclick = () => window.open("https://github.com/RonniKahalani/CardMemoryTrainer/discussions", "_blank");
 }
 
-
 /**
  * Toggles fullscreen mode.
  */

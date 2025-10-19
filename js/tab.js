@@ -34,7 +34,7 @@ export class TabHandler {
      * Constructor.
      */
     constructor() {
-        this.tabs = ["pao-home", "pao-matrix", "pao-quiz", "pao-palace"];
+        this.tabs = ["home", "matrix", "quiz", "palace"];
     }
 
     /**
@@ -50,20 +50,13 @@ export class TabHandler {
      * Hides all navigator tabs.
      */
     hideAllTabs() {
-        for (const tab of this.tabs) {
-            document.getElementById(tab).style.display = 'none';
-        }
+        this.tabs.forEach(tab => document.getElementById(`tab-${tab}`).style.display = 'none');
     }
 
     /**
     * Sets up the tab events.
     */
     setupTabEvents() {
-        const tabNames = ["home", "matrix", "quiz", "palace"];
-
-        tabNames.forEach(name => {
-            document.getElementById(`btn-${name}`).onclick = () => this.showTab(`pao-${name}`);
-        });
+        this.tabs.forEach(name => document.getElementById(`btn-${name}`).onclick = () => this.showTab(`tab-${name}`));        
     }
-
 }
