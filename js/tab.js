@@ -42,9 +42,28 @@ export class TabHandler {
      * @param id
      */
     showTab(id) {
-        for(const tab of this.tabs) {
-            document.getElementById(tab).style.display = 'none';
-        }
+        this.hideAllTabs();
         document.getElementById(id).style.display = 'block';
     }
+
+    /**
+     * Hides all navigator tabs.
+     */
+    hideAllTabs() {
+        for (const tab of this.tabs) {
+            document.getElementById(tab).style.display = 'none';
+        }
+    }
+
+    /**
+    * Sets up the tab events.
+    */
+    setupTabEvents() {
+        const tabNames = ["home", "matrix", "quiz", "palace", "instructions"];
+
+        tabNames.forEach(name => {
+            document.getElementById(`btn-${name}`).onclick = () => this.showTab(`pao-${name}`);
+        });
+    }
+
 }

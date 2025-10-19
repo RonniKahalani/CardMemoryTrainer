@@ -69,6 +69,11 @@ export class CardUtil {
         return str.charAt(0).toLowerCase() + str.slice(1);
     }
 
+    /**
+     * Proper cases a string.
+     * @param str 
+     * @returns {string}
+     */
     properCase(str) {
         const capitalLetters = this.countCapitalLetters(str);
         if(str.charAt(1) === str.charAt(1).toUpperCase() && capitalLetters > 0) {

@@ -28,6 +28,7 @@ SOFTWARE.
 /**
  * Handles the matrix feature.
  */
+import { Quiz } from "./quiz.js";
 import {CardUtil} from "./card-util.js";
 
 /**
@@ -38,21 +39,28 @@ export class Matrix {
     /**
      * Constructor.
      */
-    constructor(json) {
+    constructor() {
+        this.MATRIX_DATA_PATH = "../data/matrix/default.json";
         this.SUITS = ["hearts", "spades", "diamonds", "clubs"];
 
         this.cardUtil = new CardUtil();
-        this.currentMatrix = json;
-        this.renderMatrix();
+        this.load()
     }
 
     /**
      * Loads and renders the matrix.
-     * @param json
      */
-    load(json) {
-        this.currentMatrix = json;
-        this.renderMatrix();
+    load() {
+        const ref = this;
+        $.getJSON(this.MATRIX_DATA_PATH, function (json) {
+            this.quiz = new Quiz(ref);
+            ref.currentMatrix = json;
+            ref.renderMatrix();
+        }).fail(function (jqxhr, textStatus, error) {
+            const err = `An error occured while reading matrix data:\n${ref.MATRIX_DATA_PATH} (${error})`;
+            console.error(err);
+            alert(err);
+        });
     }
 
     /**

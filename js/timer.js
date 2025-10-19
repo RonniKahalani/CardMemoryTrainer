@@ -70,8 +70,8 @@ export class Timer {
             this.hours++;
         }
 
-        this.gethours = this.hours < 10 ? `0${this.hours} : ` : `${this.hours} : `;
-        this.secs = this.seconds < 10 ? "0" + this.seconds : this.seconds;
+        this.gethours = (this.hours < 10) ? `0${this.hours} : ` : `${this.hours} : `;
+        this.secs = (this.seconds < 10) ? "0" + this.seconds : this.seconds;
 
         this.btnContinue.style.display = "none";
         this.btnPause.style.display = "inline-block";

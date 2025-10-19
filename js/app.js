@@ -29,7 +29,6 @@ SOFTWARE.
  * Main app script used to initialize the app.
  */
 import { Matrix } from "./matrix.js";
-import { Quiz } from "./quiz.js";
 import { TabHandler } from "./tab.js";
 
 const tabHandler = new TabHandler();
@@ -44,14 +43,8 @@ btnFullscreen.onclick = () => toggleFullscreenMode();
 function start() {
 
     try {
-
-        $.getJSON("../data/matrix/default.json", function (json) {
-
-            const matrix = new Matrix(json);
-            const quiz = new Quiz(matrix);
-            setupEvents();
-        });
-        
+        const matrix = new Matrix();
+        setupEvents();
     } catch (e) {
         showError("An error occurred.", e);
     }
@@ -71,19 +64,9 @@ function showError(msg, status) {
  * Sets up the app events.
  */
 function setupEvents() {
-    setupTabEvents();
+    tabHandler.setupTabEvents();
 }
 
-/**
- * Sets up the tab events.
- */
-function setupTabEvents() {
-    const tabNames = ["home", "matrix", "quiz", "palace", "instructions"];
-
-    tabNames.forEach(name => {
-        document.getElementById(`btn-${name}`).onclick = () => tabHandler.showTab(`pao-${name}`);
-    });
-}
 
 /**
  * Toggles fullscreen mode.

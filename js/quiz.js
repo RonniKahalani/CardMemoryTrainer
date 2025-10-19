@@ -41,6 +41,7 @@ export class Quiz {
      * @param matrix
      */
     constructor(matrix) {
+        this.PALACE_DATA_PATH = "../data/palace/default.json";
 
         this.matrix = matrix;
         this.cardUtil = new CardUtil();
@@ -142,12 +143,15 @@ export class Quiz {
      */
     load() {
         const ref = this;
-        $.getJSON("../data/palace/default.json", function (json) {
-
+        $.getJSON(this.PALACE_DATA_PATH, function (json) {
             ref.currentQuiz = ref.loadQuiz();
             ref.currentPalace = json;
             ref.renderQuiz();
             ref.renderPalace(ref.currentPalace);
+        }).fail(function (jqxhr, textStatus, error) {
+            const err = `An error occured while reading palace data:\n${ref.PALACE_DATA_PATH} (${error})`;
+            console.error(err);
+            alert(err);
         });
     }
 
