@@ -9,4 +9,4 @@ randomly shuffled deck of cards, memorize and recall the cards in chronological 
 This web app helps train this memory technique and will expand your capacity to memorize a full deck of cards,
 chronologically.
 
-Checkout the [Wiki](https://github.com/RonniKahalani/CardMemoryTrainer/wiki) and [Discussions](https://github.com/RonniKahalani/CardMemoryTrainer/discussions)
+Check out the [Wiki](https://github.com/RonniKahalani/CardMemoryTrainer/wiki) and [Discussions](https://github.com/RonniKahalani/CardMemoryTrainer/discussions).
