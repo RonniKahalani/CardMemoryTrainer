@@ -79,9 +79,7 @@ export class Timer {
         this.seconds++;
 
         /* call the setTimeout( ) to keep the Count-Up alive ! */
-        this.clearTime = setTimeout(() => {
-            this.startWatch()
-        }, 1000);
+        this.clearTime = setTimeout(() => this.startWatch(), 1000);
     }
 
     /**
@@ -138,12 +136,9 @@ export class Timer {
         if (this.seconds !== 0 || this.minutes !== 0 || this.hours !== 0) {
             this.writeTime();
             clearTimeout(this.clearTime);
-            this.clearTime = setTimeout(() => {
-                this.startWatch()
-            }, 1000);
+            this.clearTime = setTimeout(() => this.startWatch(), 1000);
             this.btnContinue.style.display = "none";
             this.btnPause.style.display = "inline-block";
-
         }
     }
 

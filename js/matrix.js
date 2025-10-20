@@ -56,6 +56,7 @@ export class Matrix {
             this.quiz = new Quiz(ref);
             ref.currentMatrix = json;
             ref.renderMatrix();
+            
         }).fail(function (jqxhr, textStatus, error) {
             const err = `An error occured while reading matrix data:\n${ref.MATRIX_DATA_PATH} (${error})`;
             console.error(err);
