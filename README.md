@@ -7,7 +7,7 @@
 This memory technique is used by participants in the World Memory Championships, where you quickly browse through a
 randomly shuffled deck of cards, memorize and recall the cards in chronological order.
 
-This web app helps train this memory technique and will expand your capacity to memorize a full deck of cards, chronologically.
+This web app helps train this memory technique and will expand your capacity to memorize and recall a full deck of cards, chronologically.
 
 <img src="img/home/card-memory-trainer-components.png" alt="Components">
 
