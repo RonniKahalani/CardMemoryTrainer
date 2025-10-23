@@ -57,7 +57,7 @@ header {
     background-color: darkblue;
 }
 
-#pao-palace {
+#tab-palace {
     display: none;
 }
 
@@ -154,13 +154,11 @@ header {
     color: #0d6efd;
 }
 
-#card-counter {}
-
-#pao-matrix {
+#tab-matrix {
     display: none;
 }
 
-#pao-quiz {
+#tab-quiz {
     display: none;
 }
 
@@ -262,11 +260,6 @@ header {
     color: white;
 }
 
-#pao-instructions {
-    display: none;
-    margin: 10px;
-}
-
 .card {
     width: 80px;
     display: inline;
@@ -334,7 +327,6 @@ header {
     text-transform: uppercase;
 }
 
-#pao-rows {}
 
 .pao-row {
     color: white;
