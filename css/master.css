@@ -668,10 +668,11 @@ hr {
 #quiz-progress {
     position: absolute;
     left: 0;
-    margin-top: 150px;
+    margin-top: 180px;
     width: 100%;
-    background-color: #000000;
-    opacity: 85;
+    padding: 20px;
+    background-color: black;
+    display:none;
 }
 
 .quiz-card-answer-status {
