@@ -123,9 +123,9 @@ export class Quiz {
      */
     toggleQuizProgress() {
         const style = this.quizProgress.style;
-        style.display = !(style.display === "none") ? "none" : "block";
+        style.display = (style.display === "block") ? "none" : "block";
     }
-    
+
     /**
      * Handles focus changes on quiz elements.
      * @param elem
